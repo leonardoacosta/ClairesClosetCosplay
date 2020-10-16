@@ -1,0 +1,70 @@
+.jumbotron
+    border-radius: 0 !important
+    margin-bottom: 0 !important
+
+.splashImage
+    background: linear-gradient(300deg, rgba(0,0,0,.75), rgba(0,0,0,.2)), url(./assets/Splash.jpg)
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: cover
+    height: 50vh
+
+    ::first-line
+        font-weight: bold
+
+    .display-4
+        border: 2px white solid
+        padding: 12px
+        overflow: hidden
+        color: white
+
+.iconPM
+    background: url(https://raw.githubusercontent.com/stephenhutchings/typicons.font/493867748439a8e1ac3b92e275221f359577bd91/src/png-24px/mail.png) center no-repeat;
+    background-size: 16px 16px
+    width: 16px
+    height: 16px
+    border: none
+    display: inline-block
+    animation: blink 2s ease-in infinite
+
+@keyframes blink
+    from, to
+        opacity: 1
+    50% 
+        opacity: 0
+
+.divider
+    background: linear-gradient(137deg, #732282, #e39df1, #78118c)
+    background-size: 800% 800%
+    height: 4px
+    animation: AnimationName 5s ease infinite
+
+@media (min-width: 600px)
+    .splashImage
+        height: 75vh
+        .display-4
+            position: absolute
+            right: 25px
+            width: 50%
+        p
+            position: absolute
+            top: 300px
+            right: 25px
+            width: 50%
+
+@media (min-width: 910px)
+    .splashImage
+        height: 85vh
+        p
+            position: absolute
+            top: 230px
+            right: 25px
+            width: 50%
+
+@keyframes AnimationName
+    0%
+        background-position: 73% 0%
+    50%
+        background-position: 28% 100%
+    100%
+        background-position: 73% 0%
